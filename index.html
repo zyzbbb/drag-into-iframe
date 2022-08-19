@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .items {
+        float: left;
+      }
+      .source {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: 30px;
+      }
+      .target {
+        width: 600px;
+        height: 600px;
+        background-color: azure;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid #000;
+      }
+      .target iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+      .target .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="source" draggable="true"></div>
+      <div class="source" draggable="true"></div>
+      <div class="source" draggable="true"></div>
+      <div class="source" draggable="true"></div>
+    </div>
+    <div class="target">
+      <iframe></iframe>
+      <div class="mask"></div>
+    </div>
+  </body>
+</html>
